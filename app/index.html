@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="./recursos/utn.ico">
+	<link rel="stylesheet" type="text/css" href="./estilos/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./estilos/estiloMain.css">
+	<link rel="stylesheet" type="text/css" href="./estilos/estilos.css">
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/appMain.js" type="module" defer></script>
+
+	<title>Mis mascotas</title>
+</head>
+<body class="bodyMain">
+
+<!-- Navegador horizontal inicio -->
+<nav class="navbar navbar-expand-sm bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./recursos/logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    	<div class="navbar-nav">
+	        <a class="nav-link text-muted active" aria-current="page" href="./index.html">Inicio</a>
+	        <a class="nav-link text-muted" href="./admin.html">Administración</a>
+      	</div>
+    </div>
+  </div>
+</nav>
+<!-- Navegador horizontal fin -->
+
+<div class="container">
+	<legend class="pt-0 d-flex justify-content-center border-bottom">Mascotas en venta y adopción</legend>
+
+	<div id="spinner" class="d-flex justify-content-center"></div>
+    <section class="cards" id="anuncios"></section>
+
+	<template id="template-card">
+		<div class="card center">
+			<img class="animal" width="56" height="56">
+			<div class="card-body">
+				<p class="card-subtitle mb-2 text-muted"></p>
+				<h4 class="card-title"></h4> 
+			</div>
+				
+			<div class="card-footer text-center">
+				<img src="./recursos/raza.png" width="36" height="36">
+				<label class="raza"></label>
+				<img src="./recursos/calendario.png" width="36" height="36">
+				<label class="nacimiento"></label>
+				<img src="./recursos/vacunas.png" width="36" height="36">
+				<label class="vacunas"></label>
+			</div>
+		</div>
+		<br/>
+	</template>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid bg-dark">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+    <ul class="nav col-md-6">
+      <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="./admin.html" class="nav-link px-2 text-muted">Administración</a></li>
+    </ul>
+	<ul class="nav col-md-6 text-muted justify-content-end">
+    	<li class="nav-item px-2 text-muted">Todos los Derechos Reservados 2022</li>
+    </ul>
+  </footer>
+</div>
+
+</body>
+</html>

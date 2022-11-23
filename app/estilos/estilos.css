@@ -1,0 +1,27 @@
+
+.puntero{
+    cursor: pointer;
+}
+
+.edicion{
+    display: none;
+}
+
+input[type=submit],input[type=button],button {
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+small {
+  display: block;
+}
+
+.inputError {
+  border: 1px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.danger {
+  color: red;
+  font-weight: bold;
+}
